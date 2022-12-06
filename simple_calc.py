@@ -1,6 +1,14 @@
 import time
 time.sleep(1)
-print("Hello welcome to simple calculator. Type your inputs and choose the operation you want to do.")
+print("""
+	Hello welcome to simple calculator. Type your inputs and choose the operation you want to do.
+	To use the application, first input the value, that is, input1 and input2, then the operation you want to perform.
+	Example:
+		Please input your first value here: 9
+		Please input your second value here: 8
+		Please input your operation here: *
+	The app will print 72 as the answer.
+""")
 time.sleep(1)
 try:
 	def calc():
@@ -20,7 +28,7 @@ try:
 			time.sleep(1)
 			if (input3 == "+"):
 				sum = input1 + input2
-				time.sleep(2)
+				time.sleep(0.5)
 				print(f"Your answer is {sum}")
 			elif (input3 == "-"):
 				sub = input1 - input2
